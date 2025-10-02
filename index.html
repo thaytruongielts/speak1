@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IELTS Speaking Practice (Track 2 & 3)</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    
+    <style>
+        /* Tùy chỉnh nhỏ để đảm bảo giao diện Đang ghi mượt mà */
+        .record-btn.recording {
+            background-color: #dc3545 !important; /* Màu đỏ cho trạng thái ĐANG GHI */
+            border-color: #dc3545 !important;
+            transition: background-color 0.3s ease;
+        }
+        .record-btn.recording:hover {
+             background-color: #c82333 !important;
+        }
+        /* Đảm bảo nút dừng ghi và tải về có kiểu dáng nhất quán */
+        .stop-btn, .download-btn[disabled] {
+            background-color: #6c757d;
+            color: white;
+            opacity: 0.6;
+            cursor: not-allowed;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Luyện Phát Âm IELTS Speaking (Track 2 & 3)</h1>
+        <p>Tổng hợp 29 Từ Vựng Quan Trọng và Câu Thực Hành</p>
+    </header>
+
+    <div class="container">
+
+        <section class="vocabulary-section">
+            <h2><i class="fas fa-book-open"></i> Từ Vựng & Phiên Âm (29 Words)</h2>
+
+            <div class="vocab-list">
+                <div class="vocab-item" data-container="Mother">
+                    <span class="word">Mother</span>
+                    <span class="pronunciation">/ˈmʌðə(r)/</span>
+                    <span class="meaning">(n) mẹ</span>
+                    <div class="action-buttons">
+                        <button class="record-btn"><i class="fas fa-microphone"></i> Ghi âm</button>
+                        <button class="stop-btn" disabled><i class="fas fa-stop"></i> Dừng ghi</button>
+                        <button class="download-btn" disabled><i class="fas fa-download"></i> Tải về</button>
+                    </div>
+                </div>
+
+                <div class="vocab-item" data-container="Member">
+                    <span class="word">Member</span>
+                    <span class="pronunciation">/ˈmembə(r)/</span>
+                    <span class="meaning">(n) thành viên</span>
+                    <div class="action-buttons">
+                        <button class="record-btn"><i class="fas fa-microphone"></i> Ghi âm</button>
+                        <button class="stop-btn" disabled><i class="fas fa-stop"></i> Dừng ghi</button>
+                        <button class="download-btn" disabled><i class="fas fa-download"></i> Tải về</button>
+                    </div>
+                </div>
+
+                <div class="vocab-item" data-container="Manner">
+                    <span class="word">Manner</span>
+                    <span class="pronunciation">/ˈmænə(r)/</span>
+                    <span class="meaning">(n) cách thức</span>
+                    <div class="action-buttons">
+                        <button class="record-btn"><i class="fas fa-microphone"></i> Ghi âm</button>
+                        <button class="stop-btn" disabled><i class="fas fa-stop"></i> Dừng ghi</button>
+                        <button class="download-btn" disabled><i class="fas fa-download"></i> Tải về</button>
+                    </div>
+                </div>
+
+                <div class="vocab-item" data-container="Doctor">
+                    <span class="word">Doctor</span>
+                    <span class="pronunciation">/ˈdɒktə(r)/</span>
+                    <span class="meaning">(n) bác sĩ</span>
+                    <div class="action-buttons">
+                        <button class="record-btn"><i class="fas fa-microphone"></i> Ghi âm</button>
+                        <button class="stop-btn" disabled><i class="fas fa-stop"></i> Dừng ghi</button>
+                        <button class="download-btn" disabled><i class="fas fa-download"></i> Tải về</button>
+                    </div>
+                </div>
+
+                <div class="vocab-item" data-container="Apple">
+                    <span class="word">Apple</span>
+                    <span class="pronunciation">/ˈæpl/</span>
+                    <span class="meaning">(n) quả táo</span>
+                    <div class="action-buttons">
+                        <button class="record-btn"><i class="fas fa-microphone"></i> Ghi âm</button>
+                        <button class="stop-btn" disabled><i class="fas fa-stop"></i> Dừng ghi</button>
+                        <button class="download-btn" disabled><i class="fas fa-download"></i> Tải về</button>
+                    </div>
+                </div>
+
+                <div class="vocab-item" data-container="Children">
+                    <span class="word">Children</span>
+                    <span class="pronunciation">/ˈtʃɪldrən/</span>
+                    <span class="meaning">(n) trẻ em</span>
+                    <div class="action-buttons">
+                        <button class="record-btn"><i class="fas fa-microphone"></i> Ghi âm</button>
+                        <button class="stop-btn" disabled><i class="fas fa-stop"></i> Dừng ghi</button>
+                        <button class="download-btn" disabled><i class="fas fa-download"></i> Tải về</button>
+                    </div>
+                </div>
+
+                <div class="vocab-item" data-container="Lovely">
+                    <span class="word">Lovely</span>
+                    <span class="pronunciation">/ˈlʌvli/</span>
+                    <span class="meaning">(adj) đáng yêu</span>
+                    <div class="action-buttons">
+                        <button class="record-btn"><i class="fas fa-microphone"></i> Ghi âm</button>
+                        <button class="stop-btn" disabled><i class="fas fa-stop"></i> Dừng ghi</button>
+                        <button class="download-btn" disabled><i class="fas fa-download"></i> Tải về</button>
+                    </div>
+                </div>
+
+                <div class="vocab-item" data-container="Handsome">
+                    <span class="word">Handsome</span>
+                    <span class="pronunciation">/ˈhænsəm/</span>
+                    <span class="meaning">(adj) đẹp trai</span>
+                    <div class="action-buttons">
+                        <button class="record-btn"><i class="fas fa-microphone"></i> Ghi âm</button>
+                        <button class="stop-btn" disabled><i class="fas fa-stop"></i> Dừng ghi</button>
+                        <button class="download-btn" disabled><i class="fas fa-download"></i> Tải về</button>
+                    </div>
+                </div>
+
+                <div class="vocab-item" data-container="Friendship">
+                    <span class="word">Friendship</span>
+                    <span class="pronunciation">/ˈfrendʃɪp/</span>
+                    <span class="meaning">(n) tình bạn</span>
+                    <div class="action-buttons">
+                        <button class="record-btn"><i class="fas fa-microphone"></i> Ghi âm</button>
+                        <button class="stop-btn" disabled><i class="fas fa-stop"></i> Dừng ghi</button>
+                        <button class="download-btn" disabled><i class="fas fa-download"></i> Tải về</button>
+                    </div>
+                </div>
+
+                <div class="vocab-item" data-container="Middle">
+                    <span class="word">Middle</span>
+                    <span class="pronunciation">/ˈmɪdl/</span>
+                    <span class="meaning">(adj) ở giữa</span>
+                    <div class="action-buttons">
+                        <button class="record-btn"><i class="fas fa-microphone"></i> Ghi âm</button>
+                        <button class="stop-btn" disabled><i class="fas fa-stop"></i> Dừng ghi</button>
+                        <button class="download-btn" disabled><i class="fas fa-download"></i> Tải về</button>
+                    </div>
+                </div>
+
+                <div class="vocab-item" data-container="Meeting">
+                    <span class="word">Meeting</span>
+                    <span class="pronunciation">/ˈmiːtɪŋ/</span>
+                    <span class="meaning">(n) cuộc họp</span>
+                    <div class="action-buttons">
+                        <button class="record-btn"><i class="fas fa-microphone"></i> Ghi âm</button>
+                        <button class="stop-btn" disabled><i class="fas fa-stop"></i> Dừng ghi</button>
+                        <button class="download-btn" disabled><i class="fas fa-download"></i> Tải về</button>
+                    </div>
+                </div>
+
+                <div class="vocab-item" data-container="Present-n">
+                    <span class="word">Present (n)</span>
+                    <span class="pronunciation">/ˈprezənt/</span>
+                    <span class="meaning">(n) hiện tại</span>
+                    <div class="action-buttons">
+                        <button class="record-btn"><i class="fas fa-microphone"></i> Ghi âm</button>
+                        <button class="stop-btn" disabled><i class="fas fa-stop"></i> Dừng ghi</button>
+                        <button class="download-btn" disabled><i class="fas fa-download"></i> Tải về</button>
+                    </div>
+                </div>
+
+                <div class="vocab-item" data-container="Desert">
+                    <span class="word">Desert</span>
+                    <span class="pronunciation">/ˈdezət/</span>
+                    <span class="meaning">(n) sa mạc</span>
+                    <div class="action-buttons">
+                        <button class="record-btn"><i class="fas fa-microphone"></i> Ghi âm</button>
+                        <button class="stop-btn" disabled><i class="fas fa-stop"></i> Dừng ghi</button>
+                        <button class="download-btn" disabled><i class="fas fa-download"></i> Tải về</button>
+                    </div>
+                </div>
+
+                <div class="vocab-item" data-container="Answer">
+                    <span class="word">Answer</span>
+                    <span class="pronunciation">/ˈɑːnsə(r)/</span>
+                    <span class="meaning">(n) câu trả lời</span>
+                    <div class="action-buttons">
+                        <button class="record-btn"><i class="fas fa-microphone"></i> Ghi âm</button>
+                        <button class="stop-btn" disabled><i class="fas fa-stop"></i> Dừng ghi</button>
+                        <button class="download-btn" disabled><i class="fas fa-download"></i> Tải về</button>
+                    </div>
+                </div>
+                
+                <div class="vocab-item" data-container="Expect">
+                    <span class="word">Expect</span>
+                    <span class="pronunciation">/ɪkˈspekt/</span>
+                    <span class="meaning">(v) kỳ vọng</span>
+                    <div class="action-buttons">
+                        <button class="record-btn"><i class="fas fa-microphone"></i> Ghi âm</button>
+                        <button class="stop-btn" disabled><i class="fas fa-stop"></i> Dừng ghi</button>
+                        <button class="download-btn" disabled><i class="fas fa-download"></i> Tải về</button>
+                    </div>
+                </div>
+
+                <div class="vocab-item" data-container="Delay">
+                    <span class="word">Delay</span>
+                    <span class="pronunciation">/dɪˈleɪ/</span>
+                    <span class="meaning">(v) trì hoãn</span>
+                    <div class="action-buttons">
+                        <button class="record-btn"><i class="fas fa-microphone"></i> Ghi âm</button>
+                        <button class="stop-btn" disabled><i class="fas fa-stop"></i> Dừng ghi</button>
+                        <button class="download-btn" disabled><i class="fas fa-download"></i> Tải về</button>
+                    </div>
+                </div>
+
+                <div class="vocab-item" data-container="Reply">
+                    <span class="word">Reply</span>
+                    <span class="pronunciation">/rɪˈplaɪ/</span>
+                    <span class="meaning">(v) trả lời</span>
+                    <div class="action-buttons">
+                        <button class="record-btn"><i class="fas fa-microphone"></i> Ghi âm</button>
+                        <button class="stop-btn" disabled><i class="fas fa-stop"></i> Dừng ghi</button>
+                        <button class="download-btn" disabled><i class="fas fa-download"></i> Tải về</button>
+                    </div>
+                </div>
+
+                <div class="vocab-item" data-container="Believe">
+                    <span class="word">Believe</span>
+                    <span class="pronunciation">/bɪˈliːv/</span>
+                    <span class="meaning">(v) tin tưởng</span>
+                    <div class="action-buttons">
+                        <button class="record-btn"><i class="fas fa-microphone"></i> Ghi âm</button>
+                        <button class="stop-btn" disabled><i class="fas fa-stop"></i> Dừng ghi</button>
+                        <button class="download-btn" disabled><i class="fas fa-download"></i> Tải về</button>
+                    </div>
+                </div>
+
+                <div class="vocab-item" data-container="Admit">
+                    <span class="word">Admit</span>
+                    <span class="pronunciation">/ədˈmɪt/</span>
+                    <span class="meaning">(v) thừa nhận</span>
+                    <div class="action-buttons">
+                        <button class="record-btn"><i class="fas fa-microphone"></i> Ghi âm</button>
+                        <button class="stop-btn" disabled><i class="fas fa-stop"></i> Dừng ghi</button>
+                        <button class="download-btn" disabled><i class="fas fa-download"></i> Tải về</button>
+                    </div>
+                </div>
+
+                <div class="vocab-item" data-container="Accept">
+                    <span class="word">Accept</span>
+                    <span class="pronunciation">/əkˈsept/</span>
+                    <span class="meaning">(v) chấp nhận</span>
+                    <div class="action-buttons">
+                        <button class="record-btn"><i class="fas fa-microphone"></i> Ghi âm</button>
+                        <button class="stop-btn" disabled><i class="fas fa-stop"></i> Dừng ghi</button>
+                        <button class="download-btn" disabled><i class="fas fa-download"></i> Tải về</button>
+                    </div>
+                </div>
+
+                <div class="vocab-item" data-container="Confirm">
+                    <span class="word">Confirm</span>
+                    <span class="pronunciation">/kənˈfɜːm/</span>
+                    <span class="meaning">(v) xác nhận</span>
+                    <div class="action-buttons">
+                        <button class="record-btn"><i class="fas fa-microphone"></i> Ghi âm</button>
+                        <button class="stop-btn" disabled><i class="fas fa-stop"></i> Dừng ghi</button>
+                        <button class="download-btn" disabled><i class="fas fa-download"></i> Tải về</button>
+                    </div>
+                </div>
+
+                <div class="vocab-item" data-container="Enjoy">
+                    <span class="word">Enjoy</span>
+                    <span class="pronunciation">/ɪnˈdʒɔɪ/</span>
+                    <span class="meaning">(v) hưởng thụ</span>
+                    <div class="action-buttons">
+                        <button class="record-btn"><i class="fas fa-microphone"></i> Ghi âm</button>
+                        <button class="stop-btn" disabled><i class="fas fa-stop"></i> Dừng ghi</button>
+                        <button class="download-btn" disabled><i class="fas fa-download"></i> Tải về</button>
+                    </div>
+                </div>
+
+                <div class="vocab-item" data-container="Begin">
+                    <span class="word">Begin</span>
+                    <span class="pronunciation">/bɪˈgɪn/</span>
+                    <span class="meaning">(v) bắt đầu</span>
+                    <div class="action-buttons">
+                        <button class="record-btn"><i class="fas fa-microphone"></i> Ghi âm</button>
+                        <button class="stop-btn" disabled><i class="fas fa-stop"></i> Dừng ghi</button>
+                        <button class="download-btn" disabled><i class="fas fa-download"></i> Tải về</button>
+                    </div>
+                </div>
+
+                <div class="vocab-item" data-container="Relax">
+                    <span class="word">Relax</span>
+                    <span class="pronunciation">/rɪˈlæks/</span>
+                    <span class="meaning">(v) thư giãn</span>
+                    <div class="action-buttons">
+                        <button class="record-btn"><i class="fas fa-microphone"></i> Ghi âm</button>
+                        <button class="stop-btn" disabled><i class="fas fa-stop"></i> Dừng ghi</button>
+                        <button class="download-btn" disabled><i class="fas fa-download"></i> Tải về</button>
+                    </div>
+                </div>
+
+                <div class="vocab-item" data-container="Forget">
+                    <span class="word">Forget</span>
+                    <span class="pronunciation">/fəˈget/</span>
+                    <span class="meaning">(v) quên</span>
+                    <div class="action-buttons">
+                        <button class="record-btn"><i class="fas fa-microphone"></i> Ghi âm</button>
+                        <button class="stop-btn" disabled><i class="fas fa-stop"></i> Dừng ghi</button>
+                        <button class="download-btn" disabled><i class="fas fa-download"></i> Tải về</button>
+                    </div>
+                </div>
+
+                <div class="vocab-item" data-container="Repeat">
+                    <span class="word">Repeat</span>
+                    <span class="pronunciation">/rɪˈpiːt/</span>
+                    <span class="meaning">(v) lặp lại</span>
+                    <div class="action-buttons">
+                        <button class="record-btn"><i class="fas fa-microphone"></i> Ghi âm</button>
+                        <button class="stop-btn" disabled><i class="fas fa-stop"></i> Dừng ghi</button>
+                        <button class="download-btn" disabled><i class="fas fa-download"></i> Tải về</button>
+                    </div>
+                </div>
+
+                <div class="vocab-item" data-container="Deny">
+                    <span class="word">Deny</span>
+                    <span class="pronunciation">/dɪˈnaɪ/</span>
+                    <span class="meaning">(v) phủ nhận</span>
+                    <div class="action-buttons">
+                        <button class="record-btn"><i class="fas fa-microphone"></i> Ghi âm</button>
+                        <button class="stop-btn" disabled><i class="fas fa-stop"></i> Dừng ghi</button>
+                        <button class="download-btn" disabled><i class="fas fa-download"></i> Tải về</button>
+                    </div>
+                </div>
+
+                <div class="vocab-item" data-container="Suggest">
+                    <span class="word">Suggest</span>
+                    <span class="pronunciation">/səˈdʒest/</span>
+                    <span class="meaning">(v) gợi ý</span>
+                    <div class="action-buttons">
+                        <button class="record-btn"><i class="fas fa-microphone"></i> Ghi âm</button>
+                        <button class="stop-btn" disabled><i class="fas fa-stop"></i> Dừng ghi</button>
+                        <button class="download-btn" disabled><i class="fas fa-download"></i> Tải về</button>
+                    </div>
+                </div>
+
+                <div class="vocab-item" data-container="Present-v">
+                    <span class="word">Present (v)</span>
+                    <span class="pronunciation">/prɪˈzent/</span>
+                    <span class="meaning">(v) trình bày</span>
+                    <div class="action-buttons">
+                        <button class="record-btn"><i class="fas fa-microphone"></i> Ghi âm</button>
+                        <button class="stop-btn" disabled><i class="fas fa-stop"></i> Dừng ghi</button>
+                        <button class="download-btn" disabled><i class="fas fa-download"></i> Tải về</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="sentence-section">
+            <h2><i class="fas fa-comment-dots"></i> Câu Ví Dụ Thực Hành Speaking</h2>
+            
+            <div class="sentence-card" data-container="Sentence-1">
+                <p class="sentence-text">
+                    **Câu 1:** The member should not **delay** his **reply** to the **mother**, who **expects** him to **admit** his mistake about the **meeting** in the **middle** of the **desert**.
+                </p>
+                <p class="sentence-translation">
+                    *(Thành viên đó không nên trì hoãn câu trả lời với người mẹ, người kỳ vọng anh ta thừa nhận lỗi lầm về cuộc họp ở giữa sa mạc.)*
+                </p>
+                <div class="action-buttons">
+                    <button class="record-btn primary"><i class="fas fa-microphone"></i> Ghi âm câu</button>
+                    <button class="stop-btn primary" disabled><i class="fas fa-stop"></i> Dừng ghi</button>
+                    <button class="download-btn primary" disabled><i class="fas fa-download"></i> Tải bản ghi</button>
+                </div>
+            </div>
+
+            <div class="sentence-card" data-container="Sentence-2">
+                <p class="sentence-text">
+                    **Câu 2:** I **believe** that **handsome children** who **enjoy** their **lovely friendship** should **forget** the **answer** and simply **relax** before they **begin** to **repeat** the task.
+                </p>
+                <p class="sentence-translation">
+                    *(Tôi tin rằng những đứa trẻ đẹp trai, những người hưởng thụ tình bạn đáng yêu của chúng, nên quên câu trả lời đi và chỉ cần thư giãn trước khi chúng bắt đầu lặp lại nhiệm vụ.)*
+                </p>
+                <div class="action-buttons">
+                    <button class="record-btn primary"><i class="fas fa-microphone"></i> Ghi âm câu</button>
+                    <button class="stop-btn primary" disabled><i class="fas fa-stop"></i> Dừng ghi</button>
+                    <button class="download-btn primary" disabled><i class="fas fa-download"></i> Tải bản ghi</button>
+                </div>
+            </div>
+
+            <div class="sentence-card" data-container="Sentence-3">
+                <p class="sentence-text">
+                    **Câu 3:** The **doctor** asked the patient to **confirm** and **accept** the **manner** in which he would **present** his **apple** (case), but the patient chose to **deny** the **suggestion**.
+                </p>
+                <p class="sentence-translation">
+                    *(Vị bác sĩ yêu cầu bệnh nhân xác nhận và chấp nhận cách thức ông ấy sẽ trình bày trường hợp (táo) của mình, nhưng bệnh nhân chọn phủ nhận gợi ý đó.)*
+                </p>
+                <div class="action-buttons">
+                    <button class="record-btn primary"><i class="fas fa-microphone"></i> Ghi âm câu</button>
+                    <button class="stop-btn primary" disabled><i class="fas fa-stop"></i> Dừng ghi</button>
+                    <button class="download-btn primary" disabled><i class="fas fa-download"></i> Tải bản ghi</button>
+                </div>
+            </div>
+
+        </section>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2025 IELTS Speaking Pro - Được thiết kế để luyện tập</p>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            let isRecording = false; // Biến cờ để kiểm soát việc ghi âm
+
+            document.querySelectorAll('.record-btn').forEach(recordBtn => {
+                recordBtn.addEventListener('click', (e) => {
+                    const container = e.currentTarget.closest('[data-container]');
+                    const stopBtn = container.querySelector('.stop-btn');
+                    const downloadBtn = container.querySelector('.download-btn');
+                    
+                    const targetName = container.getAttribute('data-container').replace(/-/g, ' ');
+
+                    if (!isRecording) {
+                        // Bắt đầu ghi âm mô phỏng
+                        isRecording = true;
+                        
+                        // Cập nhật trạng thái nút
+                        recordBtn.innerHTML = '<i class="fas fa-microphone-alt"></i> Đang ghi...';
+                        recordBtn.classList.add('recording');
+                        recordBtn.disabled = true; // Vô hiệu hóa nút Ghi âm đang hoạt động
+                        stopBtn.disabled = false;
+                        downloadBtn.disabled = true; 
+                        
+                        alert(`[MÔ PHỎNG] BẮT ĐẦU GHI ÂM: ${targetName}. Click DỪNG GHI để hoàn tất.`);
+                    } else {
+                        alert(`[THÔNG BÁO] Chỉ có thể ghi âm 1 mục cùng lúc. Vui lòng nhấn Dừng ghi (Stop) cho mục đang hoạt động.`);
+                    }
+                });
+            });
+
+            document.querySelectorAll('.stop-btn').forEach(stopBtn => {
+                stopBtn.addEventListener('click', (e) => {
+                    const container = e.currentTarget.closest('[data-container]');
+                    const recordBtn = container.querySelector('.record-btn');
+                    const downloadBtn = container.querySelector('.download-btn');
+                    const targetName = container.getAttribute('data-container').replace(/-/g, ' ');
+
+                    if (isRecording) {
+                        // Dừng ghi âm mô phỏng
+                        isRecording = false;
+                        
+                        // Cập nhật trạng thái nút
+                        recordBtn.innerHTML = '<i class="fas fa-microphone"></i> Ghi âm';
+                        recordBtn.classList.remove('recording');
+                        recordBtn.disabled = false; // Kích hoạt lại nút Ghi âm
+                        stopBtn.disabled = true;
+                        downloadBtn.disabled = false; // Kích hoạt nút Tải về
+                        
+                        alert(`[MÔ PHỎNG] GHI ÂM ĐÃ DỪNG. File của ${targetName} đã sẵn sàng để Tải về.`);
+                    }
+                });
+            });
+
+            document.querySelectorAll('.download-btn').forEach(downloadBtn => {
+                downloadBtn.addEventListener('click', (e) => {
+                    if (e.currentTarget.disabled) {
+                        // Không làm gì nếu nút bị vô hiệu hóa
+                        return;
+                    }
+                    const container = e.currentTarget.closest('[data-container]');
+                    const targetName = container.getAttribute('data-container').replace(/-/g, ' ');
+                    alert(`[MÔ PHỎNG] Đang tải file bản ghi của ${targetName}.`);
+                });
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,88 @@
+/* Thiết lập cơ bản */
+:root {
+    --primary-color: #007bff;
+    --secondary-color: #28a745;
+    --text-color: #333;
+    --background-light: #f4f7f9; 
+    --card-background: #ffffff;
+    --shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+/* FIX LỖI LAYOUT BỊ NÉP */
+body {
+    background-color: var(--background-light);
+    color: var(--text-color);
+    line-height: 1.6;
+    /* Đảm bảo body đủ chiều rộng/chiều cao để căn giữa */
+    min-height: 100vh; 
+}
+
+.container {
+    max-width: 1100px; /* Chiều rộng tối đa */
+    margin: 0 auto; /* CĂN GIỮA NỘI DUNG */
+    padding: 20px;
+}
+/* HẾT FIX LỖI LAYOUT */
+
+
+/* ... Các quy tắc CSS khác giữ nguyên ... */
+/* PHẦN TỪ VỰNG */
+.vocab-item {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 15px 0;
+    border-bottom: 1px dashed #ddd;
+}
+.word {
+    font-weight: bold;
+    font-size: 1.1em;
+    flex: 2;
+}
+/* ... */
+/* Nút chức năng */
+.record-btn, .stop-btn, .download-btn { /* Thêm stop-btn vào đây */
+    padding: 8px 15px;
+    margin-left: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+.record-btn {
+    background-color: var(--primary-color);
+    color: white;
+}
+.stop-btn {
+    background-color: #dc3545; /* Màu đỏ cho Dừng Ghi */
+    color: white;
+}
+.download-btn {
+    background-color: #6c757d;
+    color: white;
+}
+
+/* ... Các quy tắc cho header, sentence-card, footer ... */
+
+/* Giao diện cho Câu ví dụ */
+.sentence-card {
+    background-color: #fff8e1;
+    padding: 20px;
+    border-left: 5px solid var(--primary-color);
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.record-btn.primary, .stop-btn.primary, .download-btn.primary {
+    padding: 10px 20px;
+    font-size: 1em;
+}
+/* ... */
